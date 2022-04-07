@@ -37,3 +37,7 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.bootJar {
+    archiveFileName.set("kopring.jar")
+}
